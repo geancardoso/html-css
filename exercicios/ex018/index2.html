@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: soulmeh;
+            src: url('fonts/soulmeh.otf') format('opentype');
+            font-size: 3em;
+            font-weight: normal;
+            font-style: italic;
+            /*Format :
+            otf (opentype)
+            ttf (truetype)
+            embedded-opentype 
+            truetype-aat (Apple Advanced Typography)
+            svg */
+        }
+        body{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: white;
+            font-family: soulmeh;
+            font-size: 3em;
+            font-style: italic;
+        }
+        main{
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px;
+            padding: 10px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body><main>
+    <h1>Titulo 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias doloremque maxime deleniti illum ducimus ea recusandae ab, soluta esse, aperiam distinctio velit in quod similique dignissimos laborum tenetur nam. Sunt.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg?si=f9b-JwduCR5rrqs2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</body>
+</html>

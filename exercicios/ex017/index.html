@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'work-Sans',Arial;
+            /*Classficações de font-size : 
+            Medidas Absolutas - cm, mm, in, "px", pt, pc.
+            
+            Medidas Relativas - "em", ex, rem, vw, vh, porcentagem(%)
+            "As recomendadas pela W3C é px e em"
+            16px = 1em 
+            16px = fonte padrão
+            */
+            font-size: 16px; /*Tamanho*/
+            font-weight: normal; /*Peso Da Fonte - CLASS: lighter, normal, bold, bolder
+                                Ou usando de 100 - 900 ( a class )
+                                */
+            font-style: italic; /*Estilo*/
+            text-decoration: underline; /*Sublinhar*/
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*shorthand font
+            - font style -> font-weight -> font-size -> font-family ->
+            */
+            font: italic bolder 3m 'Work Sans', sans-serif; /*Mesma coisa do código acima do comentário, ou seja, é um shorthand*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vero, dolorem error eos porro laudantium possimus quidem, eum voluptates tempora autem aliquid. Excepturi fugiat beatae fuga officiis neque optio! Rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quidem dignissimos quam unde accusantium laboriosam amet soluta rerum voluptas ex, odit ipsum distinctio nesciunt similique architecto fuga, pariatur velit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dicta eum culpa sed quibusdam in voluptatem rerum aut quas numquam, facere quis at rem architecto nihil sunt perferendis doloremque fuga. </p>
+</body>
+</html>

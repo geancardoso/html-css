@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root {
+            --cor-fundo: red;
+            --cor-letra: purple;
+            --fonte-letra: 'Courier New', Courier, monospace;
+            --fonte-titulo: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: gray;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        header{
+            color: var(--cor-letra);
+            font-family: var(--fonte-titulo);
+            justify-content: center;
+            background-color: white;
+            margin: auto;
+            min-width: 295px;
+            max-width: 295px;
+            border-color: white;
+            border-radius: 10px;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            height: 1200px;
+            min-width: 320px;
+            max-width: 1500px;
+            font-family: var(--fonte-letra);
+            text-align: center;
+
+        }
+        footer{
+            text-align: center;
+            font-family: var(--fonte-letra);
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: green;
+        }
+        div.video{
+            background-color: green;
+            margin-bottom: 30px;
+            padding: 30px;
+            padding-bottom: 25%;
+            position: relative;
+        }
+        div.video > iframe{
+            position: absolute;
+            top: 5%;
+            right: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Catálogo de Jogos</h1>
+        </header>
+    </div>
+    <main>
+        <picture>
+            <source media="(max-width: 810px)" srcset="dan-droids-pq.png" type="image/png">
+            <img src="dan-droids.png" alt="">
+        </picture>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=5BdeR8Gz4lmOFMJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dicta neque dolorem eius at hic itaque distinctio tenetur facere corrupti, blanditiis voluptas praesentium soluta impedit accusamus ab dolorum libero. Nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint consequuntur sapiente similique quaerat perferendis quidem dolor quod nemo neque voluptates assumenda illum nihil ea, praesentium ipsa iusto qui dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo esse unde cupiditate labore voluptas magnam magni aut. Recusandae, reiciendis! Enim culpa quas voluptatem repellendus rerum eum recusandae quidem aliquid ullam.</p>
+
+    </main>
+    <footer>
+        <p>Site desenvolvido por Gean Cardoso.</p>
+    </footer>
+</body>
+</html>

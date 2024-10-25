@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+
+        *{ /*Configuração global*/
+            /*
+            Todos os elementos vão ter:
+            margin: 0px;
+            padding: 0px;
+            CONFIGURAÇÃO GLOBAL (de todos os elementos)
+            */
+        }
+
+        :root{ /*Definição de cor e fontes com viaveis*/
+            /*EXEMPLO
+            --cor01: #ff0000;
+            --cor02: #ff0000;
+
+            --fonte-padrao: Arial ......;
+            --fonte-destaque: Blablala;
+            */
+        }
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            min-width: 320px;
+            max-width: 800px;
+            padding: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, nihil aperiam! Aspernatur recusandae quis rerum, vel ratione voluptas earum reiciendis unde at inventore, enim aliquid ab dolor nesciunt magni autem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate aspernatur veniam, numquam illo provident, tempore deleniti modi dolorum laudantium maiores vero rem eius unde quaerat suscipit at eveniet sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium sapiente eveniet ea vel minus odit, quidem corrupti veritatis officiis aut totam repellendus accusamus? Nisi doloremque aspernatur fuga adipisci debitis! Ratione?</p>
+        
+            <picture>
+                <source media="(max-width: 797px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+                <img src="imagens/dan-droids.png" alt="dan droids">
+            </picture>
+            <picture>
+                <source media="(max-width: 797px)" srcset="imagens/irina.jpg" type="image/jpeg">
+                <img src="imagens/irina-blok.jpg" alt="irina">
+            </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique blanditiis quasi sapiente, molestias fuga amet exercitationem qui officiis magni fugiat illum impedit odio perspiciatis praesentium odit unde laboriosam cumque.</p>
+    </main>
+</body>
+</html>

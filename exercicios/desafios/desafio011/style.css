@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h1:hover{
+    background-color: red;
+}
+ul::after{
+    content: '[OIIIIIIIII]';
+}
+ul > p{
+    display: none;
+}
+ul:hover > p {
+    display: block;
+}

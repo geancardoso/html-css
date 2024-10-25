@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+        /* SELETORES PERSONALIZADOS
+        # = ID (CHECK)
+        . = CLASS (CHECK)
+        : = PSEUDO CLASS (CHECK)
+        :: = PESEUDO ELEMENT (CHECK)
+        > = CLILDREN ( CONTIDO ) (CHECK)
+        */
+h1.top{ /*CONFIG H1 DE CLASS TOP*/
+    background-color: red;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+h1:hover{ /*CONFIG QUANDO PASSA O MOUSE NA PARTE DE CIMA DO TÍTULO*/
+    background-color: green;
+    color: rgb(119, 35, 35);
+}
+li:hover{ /*CONFIG QUANDO PASSA O MOUSE NA PARTE DE CIMA DA LISTA*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+    box-shadow: 10px 10px 15px 2px rgb(33, 32, 32);
+    width: 150px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+li::before{ /*CONFIG ANTES DOS NOMES DAS LISTAS*/
+    content: '[♕]';
+}
+li::after{ /*CONFIG DEPOIS DOS NOMES DAS LISTAS*/
+    content: '[ LINK ]';
+}
+div > p { /*PARÁGRAFO DENTRO DO DIV (DISPLAY NONE QUER DIZER Q N VAI APARECER)*/
+    display: none;
+}
+div:hover > p { /*PARÁGRAFO VAI APARECER  QUANDO EU PASSR  O MOUSE PELA REGIÃO DO DIV*/
+    display: block;
+    text-decoration: none;
+}
