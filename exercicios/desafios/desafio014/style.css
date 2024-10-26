@@ -1,8 +1,46 @@
-@charset "UTF-8"
+@charset "UTF-8";
 *{
     padding: 0px;
     margin: 0px;
 }
+
 body{
-    
+    color: white;
+    background-color: white;
+}
+
+:root{
+    --fonte-titulo: 'Passion';
+    --fonte-letra: 'Sriracha', cursive;
+}
+/*Fonts*/
+@font-face {
+    font-family: 'Passion';
+    src: url('fontes/PassionOne-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+header{
+    padding-top: 5%;
+    text-align: center;
+    background-color: black;
+    font-family: var(--fonte-titulo);
+    color: white;
+    height: 200px;
+    min-width: ;
+    max-width: ;
+}
+div.parteletras{
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    color: black;
+}
+footer{
+    font-family: var(--fonte-letra);
+    text-align: center;
+    background-color: black;
 }
