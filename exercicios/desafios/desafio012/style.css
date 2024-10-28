@@ -43,7 +43,7 @@ header > p {
     font-weight: bolder;
     box-sizing: border-box;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 2.0s;
 }
 #menu > a:hover{
     background-color: #28a660;
