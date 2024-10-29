@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid red;
+            
+        }
+        tr{
+            background-color: gray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.dado{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DAS TABELAS (simples)
+    TABLE = TABLE
+    TABLE ROWS = LINHAS DE TABELA
+    TABLE HEADER = CABEÇALHO DE TABELA
+    TABLE DATA = DADO DE TABELA
+    -->
+    <table> 
+        <tr> <!--Primeira linha - TR = Table Rows-->
+            <td>A1</td> <!--TD = Table Data-->
+            <td>B1</td> <!--TD = Table Data-->
+            <td>C1</td> <!--TD = Table Data-->
+        </tr>
+        <tr> <!--Segunda linha - TR = Table Rows-->
+            <td>A2</td> <!--TD = Table Data-->
+            <td>B2</td> <!--TD = Table Data-->
+            <td>C2</td> <!--TD = Table Data-->
+        </tr>
+        <tr> <!--Terceira linha - TR = Table Rows-->
+            <td>A3</td> <!--TD = Table Data-->
+            <td>B3</td> <!--TD = Table Data-->
+            <td>C3</td> <!--TD = Table Data-->
+        </tr>
+        <tr> <!--Quarte linha - TR = Table Rows-->
+            <td>A4</td> <!--TD = Table Data-->
+            <td class="dado">B4</td>    <!--TD = Table Data-->
+            <td>C4</td> <!--TD = Table Data-->
+        </tr>
+    </table>
+</body>
+</html>
