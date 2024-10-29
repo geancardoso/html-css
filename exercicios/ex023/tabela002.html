@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption{
+            border-radius: 10px;
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 1%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 70%;
+            height: 40%;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead{
+            color: white;
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+            background-color: gray;
+
+        }
+        thead > tr > th{
+            top: 0;
+            position: sticky;
+            background-color: gray;
+        }
+        th{
+            border: solid 1px black;
+        }
+        td{
+            border: solid 1px black;
+        }
+        td.posicao{
+            text-align: center;
+        }
+        td.necessario{
+            text-align: center;
+        }
+        tbody > tr:nth-child(odd) { /*Oden (odd) é impar e Even (even)é par*/
+            background-color: lightgray;
+        }
+        tfoot{
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TD,TH
+    -->
+    <table>
+        <caption>Tabela Das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">Área</th>
+                <th scope="col">% do Brasil</th>
+                <th scope="col">País Comparável</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Amazonas">Amazonas</a></td>
+                <td class="necessario">1 559 167,889</td>
+                <td class="necessario">18,321</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Mongólia">Mongólia</a></td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Pará">Pará</a></td>
+                <td class="necessario">1 245 870,798</td>
+                <td class="necessario">14,64</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Angola">Angola</a></td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso">Mato Grosso</a></td>
+                <td class="necessario">903 207,019</td>
+                <td class="necessario">10,613</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Venezuela">Venezuela</a></td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais">Minas Gerais</a></td>
+                <td class="necessario">586 521,123</td>
+                <td class="necessario">6,892</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Madagáscar">Madagascar</a></td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Bahia">Bahia</a></td>
+                <td class="necessario">564 760,427</td>
+                <td class="necessario">6,636</td>
+                <td><a href="https://pt.wikipedia.org/wiki/França">França</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total De Habitantes</th>
+                <th colspan="4"><strong>44.928.156</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
