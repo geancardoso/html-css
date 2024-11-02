@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iprof">Profissão - </label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ADM">Administrador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="ies">Estados - </label>
+            <select name="es" id="ies">
+                <option value="" selected > --- ESCOLHA ---</option>
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande Do Sul</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="imsg">Mensagem - </label><br>
+            <textarea name="msg" id="imsg" cols="40" rows="20"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
